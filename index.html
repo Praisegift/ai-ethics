@@ -44,6 +44,11 @@
             white-space: nowrap;
             margin-left: 25px;
         }
+        .menu-toggle {
+            display: none;
+            font-size: 1.7em;
+            cursor: pointer;
+        }
 
         .main-heading {
             font-size: 2.2em;
@@ -116,7 +121,7 @@
             }
 
             .nav-right a {
-                margin-left: 15px;
+                margin-left: 10px 0;
                 font-size: 0.9em;
             }   
 
@@ -125,6 +130,18 @@
                 gap: 5px;
                 padding-bottom: 20px;
                 margin-bottom: 20px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .nav-right{
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 15px;
+            }
+            .nav-right.show{
+                display: flex;
             }
 
             .main-heading {
@@ -139,6 +156,14 @@
         }
     </style>
 </head>
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navRight = document.getElementById("nav-right");
+
+    menuToggle.addEventListener("click", () =>{
+        navRight.classList.toggle("show");
+    });
+</script>
 <body>
     <div class="container">
         <header class="navbar">
