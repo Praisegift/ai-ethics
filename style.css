@@ -57,7 +57,9 @@
             margin-top: 35px;
             margin-bottom: 15px;
         }
-
+        .section-heading ul{
+            list-style-type: none;
+        }
         
         ul {
             list-style-type: disc;
