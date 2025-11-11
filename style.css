@@ -118,8 +118,14 @@
                 color: white;
                 padding: 12px 20px;
                 text-decoration: none;
+                border-radius: 6px;
+                font-size: 16px;
             }
-        @media (max-width: 600px) {
+
+            .back-btn:hover{
+                background: #b30000;
+            }
+        @media (max-width: 900px) {
             
             .container {
                 padding: 20px 15px;
