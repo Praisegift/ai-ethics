@@ -166,6 +166,9 @@
                 font-size: 1.5em;
                 margin-top: 25px;
             }
+            .site-footer{
+                width: 100%;
+            }
         }
         ::selection{
   color: #fff;
